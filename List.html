@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<Html>
+    <Head>
+    <Title>ToDoList</Title>
+    <link rel="stylesheet" href="mystyle.css">
+    </Head>
+    <Body>
+      <div id = "head"><center><H1> To Do List</H1></center></div>
+      <div class="container">
+        <div id="newtask">
+            <input type="text" placeholder="Add Tasks">
+            <button id="push">Add</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+   <script>
+      document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#newtask input').value.length == 0){
+        alert("Enter Task Name!!!!")
+    }
+      }
+    </script>
+    </Body>
+</Html>
